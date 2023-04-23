@@ -6,7 +6,15 @@
         <meta name="description" content="CSE110 Project Meeting Minutes">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/check-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+        <style>
+            p{
+                color: rgb(230,230,250);
+            }
+        </style>
     </head>
+
     <body>
         <details>
             <summary><b>Meeting Contents</b></summary>
@@ -32,13 +40,19 @@
             <h2> Brainstorm </h2>
             <h3>Date: April 12, 2023</h3>
             <h3>Attendance:</h3>
-                <ol>
+                <ol class="ems">
                 <li> Marco </li>
+                    <ul><li>Leader</li></ul>
                 <li> Karla </li>
+                    <ul><li>Co-Leader</li></ul>
                 <li> Gian </li>
+                    <ul><li>Front-End</li></ul>
                 <li> Zian </li>
+                    <ul><li>Front-End</li></ul>
                 <li> Maria </li>
+                    <ul><li>Back-End</li></ul>
                 <li> Maite </li>
+                    <ul><li>Back-End</li></ul>
                 </ol>
             </section>
         </div>
@@ -46,15 +60,22 @@
         <div id="Topics_Discusssed">
             <section>
             <h3> Topics to be Covered:</h3>
-                <ul>
+                <ul class="rems">
                 <li> Team Name</li>
+                    <ul><li>Ideas:</li>
+                        <ul><li>Powell Puff Girls</li>
+                            <li>Powell Rangers</li>
+                            <li>APOWELL 18</li>
+                            <li>Codevengers</li>
+                        </ul>
+                    </ul>
                 <li> Project Roles </li>
                 <li> Create an outline for To-Do List</li>
                 </ul>
             </section>
 
             <section>
-            <h3><span style="color:red"><em>Unfinished Business</em> from Last Meeting:</span></h3>
+            <h3><span style="color: #FFFF00"><em>Unfinished Business</em> from Last Meeting:</span></h3>
                 <ul>
                 <li> Team Name </li>
                 <li> Create an outline for To-Do List</li>
@@ -99,35 +120,38 @@
             </ul>
         </main>
         <br>
-        <form>
-            First Name: <input type="text" name="first_name">
-            <br>
-            Last Name: <input type="text" name="last_name">
-            <br>
-            UCSD Student?<input type="checkbox" name="yes_student" value="on" >Yes
-                    <input type="checkbox" name="no_student" value="on">No
-            <br>
-            College <input type="radio" name="college" value="Muir"> Muir
-            <input type="radio" name="college" value="Muir"> ERC
-            <input type="radio" name="college" value="Muir"> Sixth
-            <input type="radio" name="college" value="Muir"> Marshall
-            <input type="radio" name="college" value="Muir"> Warren
-            <input type="radio" name="college" value="Muir"> Revelle
-            <br>
-             Current Year <select name="dropdown" id="college_year" multiple>
-                    <option value="1st Year" selected>1st Year</option>
-                    <option value="2nd Year" selected>2nd Year</option>
-                    <option value="3rd Year" selected>3rd Year</option>
-                    <option value="4th Year" selected>4th Year</option>
-            </select>
-            <br>
-            Expected Graduation Date <input type="date">
-            <br>
-            Additional Comments: <br>
-            <textarea rows="3" cols="50" name="description">
-            Enter Text Here...
-            </textarea>
-        </form>
+
+        <div id="form">
+            <form>
+                First Name: <input type="text" name="first_name">
+                <br>
+                Last Name: <input type="text" name="last_name">
+                <br>
+                UCSD Student?<input type="checkbox" name="yes_student" value="on" >Yes
+                        <input type="checkbox" name="no_student" value="on">No
+                <br>
+                College <input type="radio" name="college" value="Muir"> Muir
+                <input type="radio" name="college" value="Muir"> ERC
+                <input type="radio" name="college" value="Muir"> Sixth
+                <input type="radio" name="college" value="Muir"> Marshall
+                <input type="radio" name="college" value="Muir"> Warren
+                <input type="radio" name="college" value="Muir"> Revelle
+                <br>
+                Current Year <select name="dropdown" id="college_year" multiple>
+                        <option value="1st Year" selected>1st Year</option>
+                        <option value="2nd Year" selected>2nd Year</option>
+                        <option value="3rd Year" selected>3rd Year</option>
+                        <option value="4th Year" selected>4th Year</option>
+                </select>
+                <br>
+                Expected Graduation Date <input type="date">
+                <br>
+                Additional Comments: <br>
+                <textarea rows="3" cols="50" name="description">
+                Enter Text Here...
+                </textarea>
+            </form>
+        </div>
         <hr style="width:100%">
         <footer> CSE 110 Software Engineering | <br> Univeristy of California, San Diego 2023</footer>
     </body>
