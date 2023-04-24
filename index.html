@@ -6,15 +6,30 @@
         <meta name="description" content="CSE110 Project Meeting Minutes">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/check-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+        <style>
+            p{
+                display: grid;
+                color: #927684;
+                margin-left: 0.2cm;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
     </head>
+
     <body>
         <details>
             <summary><b>Meeting Contents</b></summary>
             <nav>
                 <ul>
-                <li><a href="#Meeting_Title"> Meeting Title </a></li>
-                <li><a href="#Topics_Discussed"> Topics Discusssed</a></li>
-                <li><a href="Media"> Media</a></li>
+                <li><a href="#first"> Meeting Title </a></li>
+                <li><a href="#second"> Topics Discusssed</a></li>
+                <li><a href="#third"> Media</a></li>
+                <li><a href="#fourth">Connect With Us</a></li>
                 </ul>
             </nav>
         </details>
@@ -22,40 +37,54 @@
         <hr style="width:100%">
         <br>
         <main>
-        <div id="Meeting_Title">
-            <header>
-                <h1><b>To-do List Brainstorming</b></h1>
-                <nav></nav>
-            </header>
+        <div id="first">
+        <header>
+            <h1><b>To-do List Brainstorming</b></h1>
+            <nav></nav>
+        </header>
+        <p> <span style="text-align: center;">Music for vibes:</span></p>
 
-            <section>
-            <h2> Brainstorm </h2>
-            <h3>Date: April 12, 2023</h3>
-            <h3>Attendance:</h3>
-                <ol>
-                <li> Marco </li>
-                <li> Karla </li>
-                <li> Gian </li>
-                <li> Zian </li>
-                <li> Maria </li>
-                <li> Maite </li>
-                </ol>
-            </section>
+        <section>
+        <h2> Brainstorm </h2>
+        <h3>Date: April 12, 2023</h3>
+        <h3>Attendance:</h3>
+            <ol class="ems">
+            <li> Marco </li>
+                <ul><li>Leader</li></ul>
+            <li> Karla </li>
+                <ul><li>Co-Leader</li></ul>
+            <li> Gian </li>
+                <ul><li>Front-End</li></ul>
+            <li> Zian </li>
+                <ul><li>Front-End</li></ul>
+            <li> Maria </li>
+                <ul><li>Back-End</li></ul>
+            <li> Maite </li>
+                <ul><li>Back-End</li></ul>
+            </ol>
+        </section>
         </div>
 
-        <div id="Topics_Discusssed">
+        <div id="second">
             <section>
             <h3> Topics to be Covered:</h3>
-                <ul>
+                <ul class="rems">
                 <li> Team Name</li>
+                    <ul><li>Ideas:</li>
+                        <ul><li>Powell Puff Girls</li>
+                            <li>Powell Rangers</li>
+                            <li>APOWELL 18</li>
+                            <li>Codevengers</li>
+                        </ul>
+                    </ul>
                 <li> Project Roles </li>
                 <li> Create an outline for To-Do List</li>
                 </ul>
             </section>
 
             <section>
-            <h3><span style="color:red"><em>Unfinished Business</em> from Last Meeting:</span></h3>
-                <ul>
+            <h3><span style="color:#927684"><em>Unfinished Business</em> from Last Meeting:</span></h3>
+                <ul class="ems">
                 <li> Team Name </li>
                 <li> Create an outline for To-Do List</li>
                 </ul>
@@ -63,21 +92,22 @@
 
             <section>
             <h3> New Business:</h3>
-                <ul>
+                <ul class="ems">
                 <li> Which tools/languages we will use?</li>
-                <li> Create a Mockup on <i>Figma</i> </li>
+                <li> Create a Mockup on <i><a href=http://figma.com>Figma</a></i> </li>
                 <li> Plan to hold a <strong>Technical Workshop</strong> on CSS </li>
                 </ul>
             </section>
         </div>
 
-        <div id="Media">
+        <div id="third">
             <section>
             <h4> Media </h4>
                 <p> Example of a To-Do List:</p>
                 <img src=/images/todo_list.jpg alt="Bulletpoint list template" height="300" width="470">
+            </section>
+            <section>
                 <br>
-                <p>Music for vibes:</p>
                 <audio controls>
                     <source src="sax.mp3" type="audio/mpeg">
                     Image not supported.
@@ -99,35 +129,41 @@
             </ul>
         </main>
         <br>
-        <form>
-            First Name: <input type="text" name="first_name">
-            <br>
-            Last Name: <input type="text" name="last_name">
-            <br>
-            UCSD Student?<input type="checkbox" name="yes_student" value="on" >Yes
-                    <input type="checkbox" name="no_student" value="on">No
-            <br>
-            College <input type="radio" name="college" value="Muir"> Muir
-            <input type="radio" name="college" value="Muir"> ERC
-            <input type="radio" name="college" value="Muir"> Sixth
-            <input type="radio" name="college" value="Muir"> Marshall
-            <input type="radio" name="college" value="Muir"> Warren
-            <input type="radio" name="college" value="Muir"> Revelle
-            <br>
-             Current Year <select name="dropdown" id="college_year" multiple>
-                    <option value="1st Year" selected>1st Year</option>
-                    <option value="2nd Year" selected>2nd Year</option>
-                    <option value="3rd Year" selected>3rd Year</option>
-                    <option value="4th Year" selected>4th Year</option>
-            </select>
-            <br>
-            Expected Graduation Date <input type="date">
-            <br>
-            Additional Comments: <br>
-            <textarea rows="3" cols="50" name="description">
-            Enter Text Here...
-            </textarea>
-        </form>
+
+        <div id="fourth">
+            <h4>Connect With Us</h4>
+            <form>
+                First Name: <input type="text" name="first_name">
+                <br>
+                Last Name: <input type="text" name="last_name">
+                <br>
+                UCSD Student?<input type="checkbox" name="yes_student" value="on" >Yes
+                        <input type="checkbox" name="no_student" value="on">No
+                <br>
+                College <input type="radio" name="college" value="Muir"> Muir
+                <input type="radio" name="college" value="Muir"> ERC
+                <input type="radio" name="college" value="Muir"> Sixth
+                <input type="radio" name="college" value="Muir"> Marshall
+                <input type="radio" name="college" value="Muir"> Warren
+                <input type="radio" name="college" value="Muir"> Revelle
+                <br>
+                Current Year <select name="dropdown" id="college_year" multiple>
+                        <option value="1st Year" selected>1st Year</option>
+                        <option value="2nd Year" selected>2nd Year</option>
+                        <option value="3rd Year" selected>3rd Year</option>
+                        <option value="4th Year" selected>4th Year</option>
+                </select>
+                <br>
+                Expected Graduation Date <input type="date">
+                <br>
+                Additional Comments: <br>
+                <textarea rows="3" cols="50" name="description">
+                Enter Text Here...
+                </textarea>
+                <br>
+                <button class="submitBtn">Submit</button>
+            </form>
+        </div>
         <hr style="width:100%">
         <footer> CSE 110 Software Engineering | <br> Univeristy of California, San Diego 2023</footer>
     </body>
