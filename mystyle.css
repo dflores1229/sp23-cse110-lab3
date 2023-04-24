@@ -20,16 +20,9 @@ h1 {
     margin: auto;
     text-decoration: underline;
 }
-h2{ 
-    display:inline;
-    margin-bottom: 30px;
-    margin-right: -0.7cm;
-}
-h3{
-    position: sticky;
-    padding-top: 0.2cm;
+h2, h3{ 
+    padding-bottom: 2mm;
     margin-left: 0.2cm;
-    font-size: 25px;
 }
 /*styling for media header*/
 h4{
@@ -82,6 +75,14 @@ img {
     border-style: double;
     border-width: 2mm;
 }
+h2~h3 {
+    color:rgb(91, 90, 90);
+}
+
+ul:first-of-type + li+li{
+    color: #6d2c4d;
+}
+
 audio{
     position: fixed;
     top: 175px; right: 80px;
@@ -101,7 +102,7 @@ ul li{
     margin-left: 0.2cm;
     margin-block: 0.9mm;
 }
-.ems li {
+.ems > li {
     margin-left: 0.2cm;
     font-size: 1.2em;
     color: rgb(91, 90, 90); 
@@ -111,7 +112,7 @@ ul li{
     font-size: 1.4rem;
     color: rgb(91, 90, 90); 
 }
- a{
+ a[class~="dropdown"]{
     color: rgb(91, 90, 90);
  }
 
@@ -143,4 +144,8 @@ ul li{
         display: flex;
         padding: 1rem 3 rem;
     }
+ }
+
+ *.warning{
+    color:red;
  }
