@@ -15,17 +15,22 @@ h1 {
     margin: auto;
     text-decoration: underline;
 }
-h2{
+h2{ 
+    display:inline;
     margin-bottom: 30px;
     margin-right: -0.7cm;
 }
 h3{
+    position: sticky;
     padding-top: 0.2cm;
     margin-left: 0.2cm;
     font-size: 25px;
 }
 /*styling for media header*/
 h4{
+    position: sticky;
+    top: 30px; left:120px;
+
     color:rgb(128, 128, 0);
     text-align: center;
     padding-top: 2mm;
@@ -35,21 +40,21 @@ h4{
     text-decoration: underline;
 }
 
-p{
-    color: #927684;
-    margin-left: 0.2cm; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 form {
+    max-height: 9cm;
+    width: 60%;
+
     background-color: olive;
     border-style:double;
     border-color: beige;
     border-width: 10px;
     border-radius: 2%;
+
     margin-top: 5%;
     margin-left: 15%;
     margin-right:15%;
-    width: 60%;
+    margin-bottom: 5%;
+
     padding: 30px;
 }
 
@@ -65,17 +70,26 @@ img {
     padding-left:0.2cm;
     padding-right: 0.2cm;
 
+    width: 40%;
+    height:fit-content;
+
     border: 5px rgb(135, 115, 88);
     border-style: double;
     border-width: 2mm;
 }
 audio{
+    position: fixed;
+    top: 175px; right: 80px;
+
     margin-left: 20px;
     margin-right: 100px;
 }
+
 video{
     padding-bottom: 0.6cm;
     margin: 30px;
+    height: 4in;
+    max-width: fit-content;
 }
 
 ul li{
@@ -92,3 +106,29 @@ ul li{
     font-size: 1.4rem;
     color: rgb(91, 90, 90); 
 }
+ a{
+    color: rgb(91, 90, 90);
+ }
+
+ a:hover{
+    background-color: goldenrod;
+ }
+
+ a:visited{
+    color:#927684;
+ }
+
+ .submitBtn{
+    width: 10em;
+    height: 5ex;
+    border-radius: 2mm;
+    background-color: beige;
+    font-weight: bold;
+    margin:2%;
+    color: black;
+    cursor: pointer;
+ }
+
+ .submitBtn:active{
+    color: blue;
+ }

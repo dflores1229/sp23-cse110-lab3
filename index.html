@@ -10,7 +10,10 @@
 
         <style>
             p{
-                color: rgb(230,230,250);
+                display: grid;
+                color: #927684;
+                margin-left: 0.2cm;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
         </style>
     </head>
@@ -31,30 +34,31 @@
         <br>
         <main>
         <div id="Meeting_Title">
-            <header>
-                <h1><b>To-do List Brainstorming</b></h1>
-                <nav></nav>
-            </header>
+        <header>
+            <h1><b>To-do List Brainstorming</b></h1>
+            <nav></nav>
+        </header>
+        <p> <span style="text-align: center;">Music for vibes:</span></p>
 
-            <section>
-            <h2> Brainstorm </h2>
-            <h3>Date: April 12, 2023</h3>
-            <h3>Attendance:</h3>
-                <ol class="ems">
-                <li> Marco </li>
-                    <ul><li>Leader</li></ul>
-                <li> Karla </li>
-                    <ul><li>Co-Leader</li></ul>
-                <li> Gian </li>
-                    <ul><li>Front-End</li></ul>
-                <li> Zian </li>
-                    <ul><li>Front-End</li></ul>
-                <li> Maria </li>
-                    <ul><li>Back-End</li></ul>
-                <li> Maite </li>
-                    <ul><li>Back-End</li></ul>
-                </ol>
-            </section>
+        <section>
+        <h2> Brainstorm </h2>
+        <h3>Date: April 12, 2023</h3>
+        <h3>Attendance:</h3>
+            <ol class="ems">
+            <li> Marco </li>
+                <ul><li>Leader</li></ul>
+            <li> Karla </li>
+                <ul><li>Co-Leader</li></ul>
+            <li> Gian </li>
+                <ul><li>Front-End</li></ul>
+            <li> Zian </li>
+                <ul><li>Front-End</li></ul>
+            <li> Maria </li>
+                <ul><li>Back-End</li></ul>
+            <li> Maite </li>
+                <ul><li>Back-End</li></ul>
+            </ol>
+        </section>
         </div>
 
         <div id="Topics_Discusssed">
@@ -98,7 +102,6 @@
                 <p> Example of a To-Do List:</p>
                 <img src=/images/todo_list.jpg alt="Bulletpoint list template" height="300" width="470">
                 <br>
-                <p>Music for vibes:</p>
                 <audio controls>
                     <source src="sax.mp3" type="audio/mpeg">
                     Image not supported.
@@ -151,6 +154,8 @@
                 <textarea rows="3" cols="50" name="description">
                 Enter Text Here...
                 </textarea>
+                <br>
+                <button class="submitBtn">Submit</button>
             </form>
         </div>
         <hr style="width:100%">
